@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <title>Top Ten</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <h1>Top Ten Highest Paid Athletes in <i id="year">2023</i></h1>
+  </header>
+  <span class="clickers" id="clickers">
+      <label>Select By Country
+        <br>
+        <button class="btn btn_usa" id="btn_usa">U.S.A</button>
+        <button class="btn btn_arg" id="btn_arg">Argentina</button>
+        <button class="btn" id="btn_switz">Switzerland</button>
+        <button class="btn" id="btn_france">France</button>
+        <button class="btn" id="btn_mexico">Mexico</button>
+        <button class="btn" id="btn_potugal">Portugal</button>
+      </label>
+      <label>Select By Sport
+        <br>
+        <button class="btn" id="btn_football">Football</button>
+        <button class="btn" id="btn_golf">Golf</button>
+        <button class="btn" id="btn_basketball">Basketball</button>
+        <button class="btn" id="btn_tennis">Tennis</button>
+        <button class="btn" id="btn_boxing">Boxing</button>
+        <button class="btn" id="reset">Reset</button>
+      </label>
+  </span>
+  <main class="container">
+    
+    <div class="cards football hide portugal" id="ronaldo_container">
+      <div class="image_container">
+        <span>
+          <div class="rank">1</div>
+          <div class="flag"><img src="portugal.png" alt=""></div>
+        </span>
+        <div class="name_text" id="ronaldo">
+          <h3>Cristiano Ronaldo</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$136 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$46 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$90 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="football">Football</div>
+      </div>
+    </div>
+
+    <div class="cards football hide arg" id="messi_container">
+      <div class="image_container messi">
+        <span>
+          <div class="rank">2</div>
+          <div class="flag"><img src="argentina.png" alt=""></div>
+        </span>
+        <div class="name_text" id="ronaldo">
+          <h3>Lionel Messi</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$130 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$65 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$65 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="football">Football</div>
+      </div>
+    </div>
+
+    <div class="cards football hide france" id="kylian_container">
+      <div class="image_container kylian">
+        <span>
+          <div class="rank">3</div>
+          <div class="flag"><img src="france.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>Kylian Mbappé</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$120 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$100 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$20 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="football">Football</div>
+      </div>
+    </div>
+
+    <div class="cards basketball hide usa">
+      <div class="image_container lebron">
+        <span>
+          <div class="rank">4</div>
+          <div class="flag"><img src="usa.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>LeBron James</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$120 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$45 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$75 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="basketball">Basketball</div>
+      </div>
+    </div>
+
+    <div class="cards boxing hide mexico" id="canelo_container">
+      <div class="image_container canelo">
+        <span>
+          <div class="rank">5</div>
+          <div class="flag"><img src="mexico.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>Canelo Álvarez</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$110 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$100 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$10 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="boxing">Boxing</div>
+      </div>
+    </div>
+
+    <div class="cards golf hide usa">
+      <div class="image_container dustin">
+        <span>
+          <div class="rank">6</div>
+          <div class="flag"><img src="usa.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>Dustin Johnson</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$107 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$102 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$5 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="golf">Golf</div>
+      </div>
+    </div>
+
+    <div class="cards golf hide usa">
+      <div class="image_container phil">
+        <span>
+          <div class="rank">7</div>
+          <div class="flag"><img src="usa.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>Phil Mickelson</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$106 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$104 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$2 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="golf">Golf</div>
+      </div>
+    </div>
+
+    <div class="cards basketball hide usa">
+      <div class="image_container curry">
+        <span>
+          <div class="rank">8</div>
+          <div class="flag"><img src="usa.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>Stephen Curry</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$100 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$48 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$52 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="basketball">Basketball</div>
+      </div>
+    </div>
+
+    <div class="cards tennis hide switz" id="roger_container">
+      <div class="image_container roger">
+        <span>
+          <div class="rank">9</div>
+          <div class="flag"><img src="switz.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>Roger Federer</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$95.1 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$0.1 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$95 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="tennis">Tennis</div>
+      </div>
+    </div>
+
+    <div class="cards basketball hide usa">
+      <div class="image_container durrant">
+        <span>
+          <div class="rank">10</div>
+          <div class="flag"><img src="usa.png" alt=""></div>
+        </span>        
+        <div class="name_text" id="ronaldo">
+          <h3>Kevin Durant</h3>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="earnings" id="earnings">
+          <h3 class="money" id="money">$89 Million</h3>
+          <div class="earnings_text" id="earnings_text">Total Earnings</div>
+        </div>
+        <span class="salary_container">
+          <div class="salary_text" id="salary_text">Salary:</div>
+          <h4 class="salary">$44 M</h4>
+        </span>
+        <hr>
+        <span class="ads_container">
+          <div class="ads_text" id="ads_text">Endorsments:</div>
+          <h4 class="ads">$45 M</h4>
+        </span>       
+        <hr>
+         <div class="sport" id="basketball">Basketball</div>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+<script src="index.js " defer></script>  
+</body>
+</html>

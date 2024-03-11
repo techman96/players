@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,img{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+.hide{
+  display: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: burlywood;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+h1{
+  font-size: 4vw;
+  text-align: center;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+span{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.clickers{
+  display: flex;
+  max-width: 60%;
+  margin: 10px auto;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgb(255, 123, 0);
+  border-radius: 6px;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+.btn{
+  background-color: rgb(255, 204, 0);
+  font-size: 0.9em;
+  border-radius: 6px;
+  box-shadow: 1px 3px 5px;
+}
+#reset{
+  background-color: rgb(243, 92, 92);
+}
+label{
+  max-width: 45%;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: rgb(255, 245, 231);
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.cards{
+  width: 250px;
+  height: 53.5vh;
+  border-radius: 15px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rank{
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 183, 0, 0.6);
+  position: relative;
+  bottom: 135px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 3.5px 0;
+  font-size: 1.4em;
+  font-weight: bolder;
+  text-shadow: 1px 3px 5px white;
+}
+.flag{
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 30px;
+  background-color: rgba(233, 230, 223, 0.2);
+  position: relative;
+  bottom: 135px;
+  border-radius: 6px;
+}
+img{
+  width: 100%;
+  height: auto;
+  box-shadow: -1px 3px 5px black;
+  border-radius: 6px;
+}
+.image_container{
+  background-image: url(ronaldo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  width: 250px;
+  height: 30vh;
+  border: 2px solid black;
+  position: relative;
+  padding-top: 135px;
+}
+.image_container:hover{
+  opacity: 0.7;
+}
+.messi{
+  background-image: url(messi.jpg);
+}
+.kylian{
+  background-image: url(kylian.jpg);
+}
+.lebron{
+  background-image: url(lebron.jpg);
+}
+.canelo{
+  background-image: url(canelo.webp);
+}
+.dustin{
+  background-image: url(dustin.jpg);
+}
+.phil{
+  background-image: url(phil.jpg);
+}
+.curry{
+  background-image: url(curry.jpg);
+}
+.roger{
+  background-image: url(roger.webp);
+}
+.durrant{
+  background-image: url(durrant.webp);
+}
+.name_text{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  font-style: italic;
+  color: white;
+  text-shadow: 0px 3px 16px black;
+}
+.earnings{
+  height: 8vh;
+  background-color: rgb(63, 53, 53);
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+.earnings_text{
+  font-size: 0.5em;
+  color: goldenrod;
+}
+.money{
+  color: gold;
+}
+.salary{
+  height: 4vh;
+  padding-top: 6px;
+  padding-right: 10px;
+}
+.salary_text{
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 6px;
+  font-size: 0.9em;
+}
+.ads{
+  height: 4vh;
+  padding-top: 6px;
+  padding-right: 10px;
+}
+.ads_text{
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 6px;
+  font-size: 0.9em;
+}
+.ads_container, .salary_container{
+  background-color: burlywood;
+  border-radius: 5px;
+  height: 4.5vh;
+  margin-top: 3px;
+}
+.sport{
+  margin-top:5px ;
+  text-align: center;
+  font-size: 0.9em;
+  max-width: 35%;
+  margin: 5px auto 0 auto;
+  border-radius: 5px;
+  border-bottom: 2px solid rgb(12, 162, 112);
+  color: rgb(12, 162, 112);
+}
+#basketball{
+  color: brown;
+  border-bottom: 2px solid brown;
+}
+#tennis{
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+#boxing{
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+#golf{
+    color: rgb(169, 162, 64);
+    border-bottom: 2px solid rgb(169, 162, 64);
+}
+hr{
+  max-width: 50%;
+  margin: 2.5px auto;
+}
+
+@media only screen and (min-width: 747px) {
+  .clickers{
+    font-size: 1.2em;
+  }
+  .header{
+    height: 15vh;
+  }
+  h1{
+    font-size: 3.5vw;
+  }
+}
