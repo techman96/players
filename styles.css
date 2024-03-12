@@ -17,7 +17,7 @@ body,h1,h2,h3,h4,h5,h6,p,img{
   align-items: center;
   justify-content: center;
   height: 10vh;
-  background-color: burlywood;
+  background-color: #606c38;
   max-width: 90%;
   margin: 0 auto;
   border-radius: 6px;
@@ -28,6 +28,7 @@ h1{
   font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
+  color: #fefae0;
 }
 span{
   display: flex;
@@ -37,21 +38,24 @@ span{
 }
 .clickers{
   display: flex;
-  max-width: 60%;
+  max-width: 90%;
   margin: 10px auto;
   justify-content: space-between;
   gap: 10px;
   padding: 10px;
-  background-color: rgb(255, 123, 0);
+  background-color: #283618;
   border-radius: 6px;
-  font-size: 0.6em;
+  font-size: 0.9em;
   font-weight: bold;
+  color: burlywood;
 }
 .btn{
-  background-color: rgb(255, 204, 0);
-  font-size: 0.9em;
+  background-color: #fefae0;
+  font-size: 1.0em;
   border-radius: 6px;
   box-shadow: 1px 3px 5px;
+  margin: 2px;
+  font-weight: bold;
 }
 #reset{
   background-color: rgb(243, 92, 92);
@@ -62,9 +66,9 @@ label{
 .container{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
-  background-color: rgb(255, 245, 231);
+  background-color: #fefae0;
   max-width: 90%;
   margin: 0 auto;
   padding: 10px 0;
@@ -172,22 +176,22 @@ img{
 .salary{
   height: 4vh;
   padding-top: 6px;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 .salary_text{
   text-align: center;
-  padding-left: 30px;
+  padding-left: 50px;
   padding-top: 6px;
   font-size: 0.9em;
 }
 .ads{
   height: 4vh;
   padding-top: 6px;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 .ads_text{
   text-align: center;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-top: 6px;
   font-size: 0.9em;
 }
@@ -230,6 +234,10 @@ hr{
 
 @media only screen and (min-width: 747px) {
   .clickers{
+    font-size: 1.2em;
+    max-width: 60%;
+  }
+  .btn{
     font-size: 1.2em;
   }
   .header{
